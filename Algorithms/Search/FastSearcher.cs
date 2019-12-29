@@ -83,6 +83,11 @@ namespace Algorithms.Search
                 to = array.Length - 1;
             }
 
+            if (from >= to)
+            {
+                throw new ItemNotFoundException();
+            }
+
             var segment = new ArraySegment<int>(array, from, to - 1).Array;
             return FindIndex(segment, item);
         }
