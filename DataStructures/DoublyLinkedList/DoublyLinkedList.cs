@@ -319,7 +319,7 @@ namespace DataStructures.DoublyLinkedList
         /// <summary>
         /// List contains a node that has the parameter as data.
         /// </summary>
-        /// <param name="data"> Node to be removed.</param>
+        /// <param name="data"> Data to look for.</param>
         /// <returns>True if the node is found. False if it isn't.</returns>
         public bool Contains(T data)
         {
